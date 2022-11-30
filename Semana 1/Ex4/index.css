@@ -1,0 +1,22 @@
+body {
+    background-color: yellow;
+}
+
+body h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: brown;
+    text-align: center;
+}
+
+body p {
+    font-size: 14px;
+}
+
+.button {
+    border-radius: 100%;
+    padding: 10px;
+    border: solid 2px black;
+    border-top: 20px;
+    background-image:image-set("");
+}

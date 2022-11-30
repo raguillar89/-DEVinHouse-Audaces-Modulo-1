@@ -1,0 +1,33 @@
+body {
+    background-color: yellow;
+}
+
+body h1 {
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: brown;
+    text-align: center;
+    background-image: url("https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2022/11/10160407/GOW.jpg");
+}
+
+body p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    border-radius: 100%;
+    padding: 10px;
+    border: solid 2px black;
+    border-top: 20px;
+    margin: 0 0 0 925px;
+}
+
+embed {
+    width: 720px;
+    height: 450px;
+    margin: 0 0 0 600px;
+}

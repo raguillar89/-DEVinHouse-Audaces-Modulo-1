@@ -1,0 +1,16 @@
+.flex-container {
+    position: relative;
+    display: flex;
+}
+
+.img1 {
+    margin: 0 5px 0 10px;
+}
+
+.img2 {
+    margin: 0 5px 0 5px;
+}
+
+.img3 {
+    margin: 0 10px 0 5px;
+}
