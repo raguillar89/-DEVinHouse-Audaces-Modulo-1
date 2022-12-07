@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="classificacao()">Classificação</button>
+
+    <script>
+        function classificacao(){
+            let idade = prompt("Insira a idade para que seja analisada e fornecida a classificação etária: ");
+
+            if (idade <= 15){
+                alert("Jovem!");
+            } else if (idade > 15 && idade <=64){
+                alert("Adulto!");
+            } else {
+                alert("Idoso!");
+            }
+        }
+    </script>
+</body>
+</html>
