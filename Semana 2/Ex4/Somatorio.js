@@ -9,7 +9,12 @@ function insertNumero(){
         insertNumero();
     } else {
         somatorio();
+        limpar();
     }
+}
+
+function limpar(){
+    location.reload();
 }
 
 function somatorio(){
@@ -22,4 +27,3 @@ function somatorio(){
     alert(resultado);
 }
 insertNumero();
-reload();

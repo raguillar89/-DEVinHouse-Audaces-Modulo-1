@@ -12,7 +12,12 @@ function insertNumero(){
         insertNumero();
     } else {
         calc();
+        limpar();
     }
+}
+
+function limpar(){
+    location.reload();
 }
 
 function calc(){
@@ -29,5 +34,3 @@ function calc(){
     alert("Quantidade de números impares = " + countImpar);
 }
 insertNumero();
-reload();
-

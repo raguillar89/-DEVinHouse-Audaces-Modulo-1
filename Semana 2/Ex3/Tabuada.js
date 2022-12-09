@@ -10,10 +10,11 @@ function insertNumero(){
         insertNumero();
     } else {                
         tabuada();
+        limpar();
     }
 }
 
-function reload(){
+function limpar(){
     location.reload();
 }
 

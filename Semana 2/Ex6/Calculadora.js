@@ -24,7 +24,6 @@ function insertNumero(){
 }
 
 function limpar(){
-    localStorage.clear();
     location.reload();
 }
 

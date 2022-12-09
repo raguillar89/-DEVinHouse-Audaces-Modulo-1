@@ -12,11 +12,11 @@ function insertNumero(){
         insertNumero();
     } else {
         pa();
-        reload();
+        limpar();
     }
 }
 
-function reload(){
+function limpar(){
     location.reload();
 }
 
