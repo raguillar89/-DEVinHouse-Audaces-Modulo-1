@@ -1,31 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./DevInBank.css">
-        <script src="./DevInBank.js"></script>
-        <title>DevInBank</title>
-    </head>
-    <body>
-        <div>
-            <header class="titulo">
-                <h1>DevInBank</h1>
-            </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevInBank</title>
+    <script src="./DevInBank.js" async></script>
+    <link rel="stylesheet" href="./DevInBank.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" height="50" alt="Logo Banco" />
 
-            <div class="container">
-                <div class="bts">
-                    <button class="btnCadastro" mat-button>Cadastro de Cliente</button>
-                    <button class="btnDeposito" mat-button>Depósito</button>
-                    <button class="btnSaque" mat-button>Saque</button>
-                    <button class="btnConsulta" mat-button>Consulta de Saldo</button>
-                </div>
-            </div>
+      <h1>DevInBank</h1>
+    </header>
 
-            <footer class="rodape">
-                <p>DIH - Desenvolvido por: Renan Pinho.</p>
-            </footer>
+    <main>
+      <form id="form-cadastro">
+        <div class="nomeCad">
+          <label for="nome">Nome:</label>
+          <input required id="nome" type="text" placeholder="Digite o nome" />
         </div>
-    </body>    
+
+        <div class="cpfCad">
+          <label for="cpf">CPF:</label>
+          <input required id="cpf" type="text" placeholder="Digite o CPF" />
+        </div>
+
+        <div class="celularCad">
+          <label for="celular">Celular:</label>
+          <input required id="celular" type="text" placeholder="Digite o Celular" />
+        </div>
+
+        <div class="senhaCad">
+          <label for="senha">Senha:</label>
+          <input required id="senha" type="password" placeholder="Digite o Senha" />
+        </div>
+
+        <div class="senha2Cad">
+          <label for="confimacaoSenha">Confirmação da Senha:</label>
+          <input
+            required
+            id="confimacaoSenha"
+            type="password"
+            placeholder="Digite o Confirmação da Senha"
+          />
+        </div>
+
+        <div class="cadButtons">
+          <button type="reset">Limpar</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+
+      <br /><br />
+
+      <!-- Formulário Operacao -->
+      <form id="form-operacao">
+        <div class="contaOp">
+          <label for="conta">Conta:</label>
+          <input required id="conta" type="number" placeholder="Digite a conta" />
+        </div>
+
+        <div class="operacaoOp">
+          <label for="operacao">Operação:</label>
+          <select required id="operacao">
+            <option value="saque">Saque</option>
+            <option value="deposito">Depósito</option>
+            <option value="saldo">Consulta saldo</option>
+          </select>
+        </div>
+
+        <div class="valorOp">
+          <label for="valor">Valor:</label>
+          <input required id="valor" type="number" placeholder="Digite o valor" />
+        </div>
+
+        <div class="senhaOp">
+          <label for="senhaOperacao">Senha:</label>
+          <input required id="senhaOperacao" type="password" placeholder="Digite a senha" />
+        </div>
+
+        <div class="opButtons">
+          <button type="reset">Limpar</button>
+          <button type="submit">Confirmar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>DIH - Dev. Renan Pinho</p>
+    </footer>
+  </body>
 </html>
