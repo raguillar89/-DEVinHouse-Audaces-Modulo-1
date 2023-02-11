@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+  
+ol,
+ul {
+    list-style: none;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemLista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #cecbcb;
+    border-radius: 5px;
+}
