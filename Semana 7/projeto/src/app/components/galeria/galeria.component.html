@@ -1,21 +1,21 @@
 <main>
-  <img [src]="fotos[indexImagemAtual]" [alt]="'imagem ' + (indexImagemAtual + 1)"/>
+  <img [src]="fotos[imagemAtual]" [alt]="'imagem ' + (imagemAtual + 1)"/>
 </main>
 <footer>
   <div class="footer-text">
-    <p>Imagem {{ indexImagemAtual + 1 }} de {{ fotos.length }}</p>
+    <p>Imagem {{ imagemAtual + 1 }} de {{ fotos.length }}</p>
   </div>
   <div class="btn-group">
-    <button class="btn btn-secondary" [disabled]="indexImagemAtual === 0" (click)="goToFirstImage()">
+    <button class="btn btn-secondary" [disabled]="imagemAtual === 0" (click)="firstImage()">
       <<
     </button>
-    <button class="btn btn-primary" [disabled]="indexImagemAtual === 0" (click)="previousImage()">
+    <button class="btn btn-primary" [disabled]="imagemAtual === 0" (click)="previousImage()">
       <
     </button>
-    <button class="btn btn-secondary" [disabled]="indexImagemAtual === fotos.length - 1" (click)="nextImage()">
+    <button class="btn btn-secondary" [disabled]="imagemAtual === fotos.length - 1" (click)="nextImage()">
       >
     </button>
-    <button class="btn btn-primary" [disabled]="indexImagemAtual === fotos.length - 1" (click)="goToLastImage()">
+    <button class="btn btn-primary" [disabled]="imagemAtual === fotos.length - 1" (click)="lastImage()">
       >>
     </button>
   </div>

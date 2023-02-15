@@ -13,25 +13,25 @@ export class GaleriaComponent {
     '../assets/zoro.gif'
   ];
 
-  indexImagemAtual = 0;
+  imagemAtual = 0;
 
   nextImage() {
-    if (this.indexImagemAtual !== this.fotos.length - 1) {
-      this.indexImagemAtual += 1;
+    if (this.imagemAtual !== this.fotos.length - 1) {
+      this.imagemAtual += 1;
     }
   }
 
   previousImage() {
-    if (this.indexImagemAtual !== 0) {
-      this.indexImagemAtual -= 1;
+    if (this.imagemAtual !== 0) {
+      this.imagemAtual -= 1;
     }
   }
 
-  goToFirstImage() {
-    this.indexImagemAtual = 0;
+  firstImage() {
+    this.imagemAtual = 0;
   }
 
-  goToLastImage() {
-    this.indexImagemAtual = this.fotos.length - 1;
+  lastImage() {
+    this.imagemAtual = this.fotos.length - 1;
   }
 }
