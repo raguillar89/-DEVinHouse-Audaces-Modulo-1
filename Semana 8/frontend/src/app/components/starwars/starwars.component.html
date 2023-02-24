@@ -1,0 +1,23 @@
+<div class="container">
+  <button class="dropdown-status mat-elevation-z4" (click)="onSelectHabilidade()"><b>Desabilitar Habilidade</b></button>
+  <button class="dropdown-status mat-elevation-z4" (click)="onSelectPlaneta()"><b>Desabilitar Planeta</b></button>
+  <button class="dropdown-status mat-elevation-z4" (click)="onSelectArmas()"><b>Desabilitar Armas</b></button>
+</div>
+
+<mat-card class="card mat-elevation-z4" *ngFor="let personagem of personagens">
+  <img [src]="personagem.avatar">
+  <mat-card-header>
+    <mat-card-title class="nome">{{ personagem.nome }}</mat-card-title>
+  </mat-card-header><br>
+  <div class="btns">
+    <a routerLink="update/{{ personagem.id }}">
+      <i class="material-icons edit">edit</i>
+    </a>
+    <a routerLink="delete/{{ personagem.id }}">
+      <i class="material-icons delete">delete</i>
+    </a>
+  </div>
+  <p class="habilidade" [hidden]="IsHiddenHabilidade"><b>Habilidade:</b> {{ personagem.habilidade }}</p>
+  <p class="planeta" [hidden]="IsHiddenPlaneta"><b>Planeta:</b> {{ personagem.planeta }}</p>
+  <p class="armas" [hidden]="IsHiddenArmas"><b>Armas:</b> {{ personagem.armas }}</p>
+</mat-card>
