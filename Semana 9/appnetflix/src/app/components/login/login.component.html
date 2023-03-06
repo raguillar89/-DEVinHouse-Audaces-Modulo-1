@@ -1,0 +1,15 @@
+<div class="container">
+  <form [formGroup]="formUser" class="form mat-elevation-z8">
+    <h1>Login</h1>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>E-mail</mat-label>
+      <input required type="email" formControlName="email" id="email" matInput placeholder="Ex. ...@email.com">
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Password</mat-label>
+      <input required type="password" formControlName="password" id="password" matInput placeholder="Ex. 123">
+    </mat-form-field>
+    <button class="full-width mat-elevation-z4" (click)="onSubmit()" >Access</button>
+  </form>
+</div>

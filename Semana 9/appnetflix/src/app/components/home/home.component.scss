@@ -1,0 +1,29 @@
+.container-movies, .container-series {
+  text-align: center;
+}
+
+h2 {
+  margin: 20px 0 -5px 150px;
+  text-align: left;
+}
+
+.card {
+  width: 300px;
+  display: inline-flex;
+  margin: 15px 5px 5px 15px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+mat-card-header {
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+

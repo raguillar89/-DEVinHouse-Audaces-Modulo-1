@@ -1,0 +1,31 @@
+* {
+  background-color: rgba(122, 122, 122, 0.774);
+}
+
+.container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 8rem;
+  color: white;
+  background: linear-gradient(90deg, rgb(56, 56, 56) 0%, rgb(75, 75, 75) 0%, rgb(97, 97, 97) 26%);
+}
+
+.top-content {
+  display: flex;
+}
+
+app-header {
+  margin-left: -50px;
+}
+
+.menu {
+  margin: 1.5rem 0 0 1rem;
+  color: rgb(48, 48, 48);
+  background: linear-gradient(90deg, rgb(56, 56, 56) 0%, rgb(75, 75, 75) 0%, rgb(97, 97, 97) 0%);
+}
+
+mat-icon {
+  background: linear-gradient(90deg, rgb(56, 56, 56) 0%, rgb(75, 75, 75) 0%, rgb(97, 97, 97) 0%);
+}

@@ -1,0 +1,23 @@
+<div class="container-movies">
+  <h2>Movies</h2>
+  <mat-card class="card mat-elevation-z8" *ngFor="let serie of series | filterMoveis:filterMovies">
+    <img [src]="serie.poster">
+    <mat-card-header>
+      <mat-card-title class="serieName">{{ serie.name }}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+  <div class="button-area">
+    <button type="button" appPrev>Prev</button>
+    <button type="button" appNext>Next</button>
+  </div>
+</div>
+<br>
+<div class="container-series">
+  <h2>Series</h2>
+  <mat-card class="card mat-elevation-z8" *ngFor="let serie of series | filterTVSeries:filterTVSeries">
+    <img [src]="serie.poster">
+    <mat-card-header>
+      <mat-card-title class="serieName">{{ serie.name }}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>
