@@ -1,6 +1,6 @@
 <div class="container-movies">
   <h2>Movies</h2>
-  <mat-card class="card mat-elevation-z8" *ngFor="let serie of series | filterMoveis:filterMovies">
+  <mat-card class="card mat-elevation-z8" *ngFor="let serie of series | filterMovies:filterMovies">
     <img [src]="serie.poster">
     <mat-card-header>
       <mat-card-title class="serieName">{{ serie.name }}</mat-card-title>

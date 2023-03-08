@@ -1,0 +1,98 @@
+:host {
+  margin-left: -25px;
+}
+
+h3 {
+  color: white;
+  margin-top: -160px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.movie {
+  padding: 20px 0;
+  margin-top: 110px;
+  margin-bottom: 90px;
+  text-align: center;
+  align-items: center;
+}
+
+.slider-wrap {
+  position: relative;
+}
+
+.slider-main {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(55, 55, 55);
+  margin: 0 0 50px 0;
+}
+
+mat-card {
+  display: inline-flex;
+  width: 300px;
+  position: relative;
+  align-items: center;
+  margin: 15px 15px 15px 15px;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+
+img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+mat-card-header {
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.serieName {
+  font-size: 0.9rem;
+}
+
+.button-area {
+  width: 100%;
+  display: flex;
+}
+
+.prev, .next {
+  position: relative;
+  top: 40px;
+  height: 120px;
+  width: 100px;
+  background: none;
+  color: rgba(255, 255, 255, 0.636);
+  border: none;
+  transition: all 0.5s ease;
+  z-index: 1000;
+  justify-content: center;
+}
+
+.prev i, .next i {
+  font-size: 45px;
+  font-weight: 200px;
+}
+
+.prev:hover , .next:hover {
+  color: white;
+  transform: scale(1.5);
+}
+
+.prev {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.518), rgba(8, 8, 8, 0));
+}
+
+.next {
+  right: -1600px;
+  background: linear-gradient(90deg, rgba(8, 8, 8, 0), rgba(0, 0, 0, 0.518));
+}
+

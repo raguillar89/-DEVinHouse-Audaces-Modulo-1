@@ -7,7 +7,7 @@ import { Serie } from 'src/app/Interface/serie';
 @Injectable({
   providedIn: 'root'
 })
-export class SeriesService {
+export class MoviesService {
 
   constructor(private http: HttpClient) { }
 

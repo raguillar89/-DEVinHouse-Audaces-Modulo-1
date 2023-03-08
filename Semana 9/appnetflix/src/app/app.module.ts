@@ -22,17 +22,18 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { SerieComponent } from './components/serie/serie.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { LoginComponent } from './components/login/login.component';
 import { FullScreenComponent } from './layout/full-screen/full-screen.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FilterDocumentariesPipe } from './filters/series/filterDocumentaries';
-import { MovieComponent } from './components/movie/movie.component';
 import { FilterMoviesPipe } from './filters/movies/filterMovies';
 import { FilterSeriesPipe } from './filters/series/filterSeries';
 import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
+import { SerieComponent } from './pages/serie/serie.component';
+import { SerieCategoryComponent } from './components/categories/serieCategory/serieCategory.component';
+import { MovieCategoryComponent } from './components/categories/movieCategory/movieCategory.component';
+import { MovieComponent } from './pages/movie/movie.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +44,13 @@ import { PrevDirective } from './directives/prev.directive';
     LoginComponent,
     FullScreenComponent,
     HeaderComponent,
-    MovieComponent,
-    FilterDocumentariesPipe,
     FilterMoviesPipe,
     FilterSeriesPipe,
     NextDirective,
-    PrevDirective
+    PrevDirective,
+    SerieCategoryComponent,
+    MovieCategoryComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
