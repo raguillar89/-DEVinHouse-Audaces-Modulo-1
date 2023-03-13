@@ -1,0 +1,17 @@
+* {
+  background-color: rgba(122, 122, 122, 0.774);
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100%;
+}
+
+.top-content {
+  display: flex;
+}
+
+app-header {
+  margin-left: -50px;
+}
+

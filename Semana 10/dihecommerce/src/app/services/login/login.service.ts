@@ -2,17 +2,17 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { API_CONFIG } from 'src/app/environments/environments';
-import { Serie } from 'src/app/Interface/serie';
+import { IUser } from 'src/app/interface/user.interface';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class SeriesService {
+export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  findAll(): Observable<Serie[]>{
-    return this.http.get<Serie[]>(`${API_CONFIG.baseUrl}/series`);
+  login(): Observable<IUser[]> {
+    return this.http.get<IUser[]>(`${API_CONFIG.baseUrl}/users`);
   }
 }
-

@@ -1,0 +1,22 @@
+<mat-nav-list class="nav-list">
+  <a mat-list-item routerLink="home">
+    <i class="material-icons">home</i>
+    <label for="">Home</label>
+  </a>
+  <a mat-list-item routerLink="product">
+    <i class="material-icons">production_quantity_limits</i>
+    <label>Products</label>
+  </a>
+  <a mat-list-item routerLink="account">
+    <i class="material-icons">account_circle</i>
+    <label>Account</label>
+  </a>
+  <a mat-list-item routerLink="FAQ">
+    <i class="material-icons">quiz</i>
+    <label>FAQ</label>
+  </a>
+  <a mat-list-item class="botton-icon">
+    <i class="material-icons" (click)="logout()">logout</i>
+    <label>Logout</label>
+  </a>
+</mat-nav-list>

@@ -1,0 +1,32 @@
+<div class="container">
+  <form [formGroup]="formProductCreate" class="form">
+    <h1 class="fullWidth">Create Product</h1>
+
+    <mat-form-field class="fullWidth">
+      <mat-label>Product</mat-label>
+      <input type="text" [(ngModel)]="product.product" formControlName="newProduct" name="newProduct" matInput placeholder="Ex: Chair" required>
+      <mat-icon matSuffix>redeem</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="fullWidth">
+      <mat-label>Quantity</mat-label>
+      <input type="number" [(ngModel)]="product.quantity" formControlName="quantity" name="quantity" matInput placeholder="Ex: 100" required>
+      <mat-icon matSuffix>inventory_2</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="fullWidth">
+      <mat-label>Price</mat-label>
+      <input type="text" [(ngModel)]="product.price" name="price" formControlName="price" matInput placeholder="Ex: R$99.99" required>
+      <mat-icon matSuffix>request_quote</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="fullWidth">
+      <mat-label>Created By:</mat-label>
+      <input disabled type="text" matInput placeholder="Ex: John Wick">{{ userName }}
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+
+    <button (click)="create()" class="fullWidth mat-elevation-z4" mat-flat-button color="primary">Cadastrar</button>
+    <button routerLink="../" class="fullWidth mat-elevation-z4" mat-flat-button color="warn">Cancelar</button>
+  </form>
+</div>

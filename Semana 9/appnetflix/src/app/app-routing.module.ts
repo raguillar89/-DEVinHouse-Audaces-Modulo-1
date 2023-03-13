@@ -14,7 +14,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'series', component: SerieComponent },
     { path: 'movies', component: MovieComponent }
-  ] }
+  ]}
 ];
 
 @NgModule({

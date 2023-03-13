@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userEmail": "renan@email.com",
+      "userPassword": "1234as"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "product": "Cadeira",
+      "quantity": 20,
+      "price": 85.99
+    },
+    {
+      "id": 2,
+      "product": "Teclado",
+      "quantity": 200,
+      "price": 49.99
+    },
+    {
+      "product": "Monitor",
+      "quantity": 140,
+      "price": "800.00",
+      "id": 3
+    },
+    {
+      "product": "Mouse",
+      "quantity": 300,
+      "price": "69.99",
+      "id": 4
+    }
+  ]
+}
